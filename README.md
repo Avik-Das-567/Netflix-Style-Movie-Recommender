@@ -19,7 +19,7 @@ netflix/
 ├── movies_dataset.csv
 ├── movies.pkl
 ├── similarity.pkl
-├── users.db
+└── users.db
 ```
 ## Preview Images of the App
 - Homepage :
