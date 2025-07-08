@@ -21,6 +21,7 @@ netflix/
 ├── similarity.pkl
 └── users.db
 ```
+---
 ## Preview Images of the App
 - Homepage :
 
