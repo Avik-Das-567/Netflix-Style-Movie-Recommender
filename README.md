@@ -13,15 +13,15 @@ This project demonstrates how machine learning and data science can be applied t
 - 🛠 **Easy to Extend**: Add collaborative filtering, user history, or deployment to cloud
 
 ---
-
 ## 🛠 Tech Stack
-| Layer       | Technology                          |
-| ----------  | -----------------------------------  |
-| Frontend    | HTML, CSS     |
-| Backend     | Python, Flask                       |
-| ML / Recsys | Content-based filtering (cosine similarity) |
-| Database    | SQLite or CSV (movie metadata, users data) |
-| Deployment  | Local server (Flask) - easily deployable to Heroku, Render, etc. |
+| Layer         | Technology / Details                                                                 |
+|-------------- | ------------------------------------------------------------------------------------ |
+| Frontend      | HTML, CSS – Netflix-inspired UI                                                      |
+| Backend       | Python, Flask – lightweight web server, routing, authentication                      |
+| ML / Recsys   | Content-based filtering using cosine similarity – trained on static `movies_dataset.csv` |
+| Data Storage  | SQLite (`users.db`) – stores user login data dynamically                             |
+| Training Data | CSV file (`movies_dataset.csv`) containing movie metadata (title, tags)              |
+| Deployment    | Local Flask server – easily deployable to cloud (e.g., Render, Heroku)                |
 
 ---
 
@@ -49,14 +49,24 @@ Netflix-App/
 ```
 ---
 ## 📊 How it Works
-- The app uses a **content-based recommendation algorithm**:
-  - Extracts movie features (e.g., genre, keywords, cast)
+- The app uses a **content-based recommendation algorithm** :
+  - Extracts movie features from text tags (e.g., genre, keywords, themes)
+  - Converts these tags into numerical vectors using **CountVectorizer**
   - Computes **cosine similarity** between movies
-  - Recommends movies most similar to the user’s selection
-- Built to demonstrate:
-  - Feature engineering & vectorization
-  - Similarity search & ranking
-  - Integration of ML into real applications
+  - Recommends the top N movies most similar to the user's selected movie
+
+- Built to demonstrate :
+  - **Feature engineering & vectorization** – transforming text metadata into embeddings
+  - **Similarity search & ranking** – finding closest matches based on cosine similarity
+  - **Integration of ML into production** – connecting model outputs into a real Flask web app
+
+---
+## ✅ Requirements
+- Python
+- Flask
+- pandas
+- scikit-learn
+- (Optional) SQLiteStudio – to view `users.db` visually
 
 ---
 ## 🚀 How to Run Locally
@@ -94,7 +104,7 @@ Netflix-App/
   ```
   python app.py
   ```
-- Go to this link in browser :
+- Open in your browser :
   ```
   http://127.0.0.1:5000
   ```
