@@ -20,7 +20,7 @@ This project demonstrates how machine learning and data science can be applied t
 | Frontend    | HTML, CSS     |
 | Backend     | Python, Flask                       |
 | ML / Recsys | Content-based filtering (cosine similarity) |
-| Database    | SQLite or CSV (movie metadata, users) |
+| Database    | SQLite or CSV (movie metadata, users data) |
 | Deployment  | Local server (Flask) - easily deployable to Heroku, Render, etc. |
 
 ---
@@ -28,7 +28,7 @@ This project demonstrates how machine learning and data science can be applied t
 ## 📂 Project Structure
 
 ```
-netflix/
+Netflix-App/
 │
 ├── static/
 │   └── style.css
@@ -58,6 +58,46 @@ netflix/
   - Similarity search & ranking
   - Integration of ML into real applications
 
+---
+## 🚀 How to Run Locally
+- Go to the **Netflix Project Folder** in your PC, and open **Command Prompt** in that folder.
+
+- In the CMD, type :
+  ```
+  python -m venv venv  
+  ```
+  This creates a **virtual environment** named `venv`.
+
+- Activate the **Virtual Environment** :
+  ```
+  venv\Scripts\activate
+  ```
+- Install the dependencies : **flask**, **pandas** and **scikit-learn**.
+  ```
+  pip install flask pandas scikit-learn
+  ```
+- Prepare the database :
+  ```
+  python netflixdb.py
+  ```
+  - **`users.db`** will be created.
+  - In this database, we can store the Users' **email ids** and **passwords** for login.
+  - **`users.db`** can be opened using **SQLiteStudio**.
+
+- Train the Model :
+  ```
+  python train.py
+  ```
+  - **`movies.pkl`** & **`similarity.pkl`** will be created.
+
+- Run the app :
+  ```
+  python app.py
+  ```
+- Go to this link in browser :
+  ```
+  http://127.0.0.1:5000
+  ```
 ---
 ## Preview Images (screenshots) of the App
 - Homepage :
