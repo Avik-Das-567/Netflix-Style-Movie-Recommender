@@ -27,7 +27,7 @@ A fully functional Netflix-inspired movie recommendation system built with **Fla
 ## 📂 Project Structure
 
 ```
-Netflix-App/
+Netflix-Project/
 │
 ├── static/
 │   └── style.css
