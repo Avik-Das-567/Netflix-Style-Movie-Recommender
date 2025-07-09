@@ -27,7 +27,7 @@ A fully functional Netflix-inspired movie recommendation system built with **Fla
 ## 📂 Project Structure
 
 ```
-Netflix-Project/
+Netflix-App/
 │
 ├── static/
 │   └── style.css
@@ -69,7 +69,7 @@ Netflix-Project/
 
 ---
 ## 🚀 How to Run Locally
-- Go to the **Netflix Project Folder** in your PC, and open **Command Prompt** in that folder.
+- Go to the **Netflix-App Folder** in your PC, and open **Command Prompt** in that folder.
 
 - In the CMD, type :
   ```
