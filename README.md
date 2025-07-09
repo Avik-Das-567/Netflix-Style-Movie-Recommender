@@ -17,7 +17,7 @@ A fully functional Netflix-inspired movie recommendation system built with **Fla
 |-------------- | ------------------------------------------------------------------------------------ |
 | Frontend      | HTML, CSS – Netflix-inspired UI                                                      |
 | Backend       | Python, Flask – lightweight web server, routing, authentication                      |
-| ML / Recsys   | Content-based filtering (CountVectorizer + cosine similarity) – model trained on `movies_dataset.csv` |
+| ML / Recsys   | Content-based filtering (CountVectorizer + cosine similarity) – trained on `movies_dataset.csv` |
 | Data Storage  | SQLite (`users.db`) – stores user login data dynamically                             |
 | Training Data | CSV file (`movies_dataset.csv`) containing movie metadata (title, tags)              |
 | Deployment    | Local Flask server – easily deployable to cloud (e.g., Render, Heroku)                |
