@@ -1,7 +1,6 @@
 # 🎬 Netflix-Style Movie Recommender Web App
 
-- A fully functional Netflix-inspired movie recommendation system built with **Flask** and **Python**.  
-- This project demonstrates how Machine Learning and NLP can power real-world recommendation systems — wrapped in a clean, production-style web app.
+A fully functional Netflix-inspired movie recommendation system built with **Flask** and **Python**. This project demonstrates how Machine Learning and NLP can power real-world recommendation systems — wrapped in a clean, production-style web app.
 
 ---
 
@@ -18,7 +17,7 @@
 |-------------- | ------------------------------------------------------------------------------------ |
 | Frontend      | HTML, CSS – Netflix-inspired UI                                                      |
 | Backend       | Python, Flask – lightweight web server, routing, authentication                      |
-| ML / Recsys   | Content-based filtering using cosine similarity – Model trained on static `movies_dataset.csv` |
+| ML / Recsys   | Content-based filtering (CountVectorizer + cosine similarity) – model trained on `movies_dataset.csv` |
 | Data Storage  | SQLite (`users.db`) – stores user login data dynamically                             |
 | Training Data | CSV file (`movies_dataset.csv`) containing movie metadata (title, tags)              |
 | Deployment    | Local Flask server – easily deployable to cloud (e.g., Render, Heroku)                |
@@ -86,13 +85,12 @@ Netflix-App/
   ```
   pip install flask pandas scikit-learn
   ```
-- Prepare the database :
+- Create the database :
   ```
   python netflixdb.py
   ```
-  - **`users.db`** will be created.
-  - In this database, we can store the Users' **email ids** and **passwords** for login.
-  - **`users.db`** can be opened using **SQLiteStudio**.
+  - This will create **`users.db`** to store the users' **email IDs** and **passwords**.
+  - You can open and inspect **`users.db`** using tools like **SQLiteStudio**.
 
 - Train the Model :
   ```
@@ -109,7 +107,7 @@ Netflix-App/
   http://127.0.0.1:5000
   ```
 ---
-## Preview Images (screenshots) of the App
+## 📸 Preview Images of the App
 - Homepage :
 
 ![Netflix_App_Screenshot](https://github.com/user-attachments/assets/90ce9fcc-50d4-4f55-8f81-b6e0541f2d67)
