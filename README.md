@@ -1,7 +1,7 @@
 # 🎬 Netflix-Style Movie Recommender Web App
 
-A fully functional Netflix-inspired movie recommendation system built with **Flask** and **Python**.  
-This project demonstrates how machine learning and data science can be applied to create an engaging, production-like web application.
+- A fully functional Netflix-inspired movie recommendation system built with **Flask** and **Python**.  
+- This project demonstrates how Machine Learning and NLP can power real-world recommendation systems — wrapped in a clean, production-style web app.
 
 ---
 
@@ -18,7 +18,7 @@ This project demonstrates how machine learning and data science can be applied t
 |-------------- | ------------------------------------------------------------------------------------ |
 | Frontend      | HTML, CSS – Netflix-inspired UI                                                      |
 | Backend       | Python, Flask – lightweight web server, routing, authentication                      |
-| ML / Recsys   | Content-based filtering using cosine similarity – trained on static `movies_dataset.csv` |
+| ML / Recsys   | Content-based filtering using cosine similarity – Model trained on static `movies_dataset.csv` |
 | Data Storage  | SQLite (`users.db`) – stores user login data dynamically                             |
 | Training Data | CSV file (`movies_dataset.csv`) containing movie metadata (title, tags)              |
 | Deployment    | Local Flask server – easily deployable to cloud (e.g., Render, Heroku)                |
