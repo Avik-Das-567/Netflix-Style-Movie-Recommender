@@ -116,4 +116,8 @@ Netflix-App/
 
 ![Netflix_Login_Screenshot](https://github.com/user-attachments/assets/e12db505-b721-430d-9e92-45f5251cd6ec)
 
+- Signup Page :
+
+![Signup Page](https://github.com/user-attachments/assets/27e8d941-f844-4356-803f-404acc495d50)
+
 ---
