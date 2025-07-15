@@ -28,6 +28,7 @@ A fully functional Netflix-inspired movie recommendation system built with **Fla
 
 ```
 Netflix-App/
+│
 ├── scripts/
 │   ├── clean_data.py
 │   ├── netflixdb.py
