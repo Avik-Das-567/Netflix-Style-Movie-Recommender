@@ -28,23 +28,38 @@ A fully functional Netflix-inspired movie recommendation system built with **Fla
 
 ```
 Netflix-App/
+├── scripts/
+│   ├── clean_data.py
+│   ├── netflixdb.py
+│   └── train.py
 │
 ├── static/
-│   └── style.css
-│   └── bg.jpg
+│   ├── style.css
+│   ├── watch.css
+│   ├── bg.jpg
+│   └── images
 │
 ├── templates/
-│   └── home.html
-│   └── login.html
-│   └── signup.html
+│   ├── admin.html
+│   ├── home.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── visualize.html
+│   └── watch.html
 │
-├── app.py
-├── train.py
-├── netflixdb.py
-├── movies_dataset.csv
-├── movies.pkl
-├── similarity.pkl
-└── users.db
+├── dataset/
+│   ├── movies_dataset.csv
+│   ├── movie_links.csv
+│   └── cleaned_movies.csv
+│
+├── pkl/
+│   ├── movies.pkl
+│   └── similarity.pkl
+│
+├── database/
+│   └── users.db
+│
+└── app.py
 ```
 ---
 ## 📊 How it Works
@@ -65,6 +80,7 @@ Netflix-App/
 - Flask
 - pandas
 - scikit-learn
+- matplotlib
 - (Optional) SQLiteStudio – to view `users.db` visually
 
 ---
