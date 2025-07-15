@@ -98,9 +98,9 @@ Netflix-App/
   ```
   venv\Scripts\activate
   ```
-- Install the dependencies : **flask**, **pandas** and **scikit-learn**.
+- Install the dependencies : **flask**, **pandas**, **scikit-learn**, **matplotlib**.
   ```
-  pip install flask pandas scikit-learn
+  pip install flask pandas scikit-learn matplotlib
   ```
 - Create the database :
   ```
