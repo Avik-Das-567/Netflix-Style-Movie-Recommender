@@ -5,7 +5,7 @@ Inspired by Netflix, this web app offers personalized recommendations, trending 
 
 ---
 
-## ✨ **Features at a Glance**
+## ✨ Features at a Glance
 
 - 🔐 **User authentication**: Sign up, log in, and manage sessions.
 - 🎯 **Personalized recommendations**: Suggests similar movies based on content (genre, tags, actors, language).
@@ -14,11 +14,10 @@ Inspired by Netflix, this web app offers personalized recommendations, trending 
   - Language distribution across movies.
   - Genres with an average rating above 8.
 - 🎬 **Watch trailers**: One-click trailer links from YouTube.
-- 🛠 **Admin dashboard**: View all movies sorted by rating.
 
 ---
 
-## 🧠 **How It Works**
+## 🧠 How It Works
 
 This project uses a **content-based filtering** approach to recommend movies. Here’s an overview of the data flow and logic:
 
@@ -54,7 +53,7 @@ This project uses a **content-based filtering** approach to recommend movies. He
 
 ---
 
-## 🏛 **Project Structure**
+## 🏛 Project Structure
 
 ```
 Netflix-App/
@@ -94,7 +93,7 @@ Netflix-App/
 ```
 ---
 
-## ⚙️ **Main Modules & Scripts**
+## ⚙️ Main Modules & Scripts
 
 | Script                | Purpose                                                                |
 | -------------------- | ----------------------------------------------------------------------- |
@@ -116,7 +115,7 @@ Netflix-App/
   - Opens the trailer or watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
 
 - **Admin** Login button on homepage:
-  - Takes you to the login page; if logged in as the admin user, shows all movies sorted by rating.
+  - Takes you to the login page. If logged in as the admin user, takes you back to the app's homepage.
 
 ---
 
