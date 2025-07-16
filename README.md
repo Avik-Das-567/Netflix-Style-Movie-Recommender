@@ -166,7 +166,7 @@ Recommendations include:
   ```
   python scripts/netflixdb.py
   ```
-  This creates **`users.db`**, to store **usernames** and **passwords**.
+  This creates **`users.db`** to store **usernames** and **passwords**.
 
 - Clean the data :
   ```
@@ -201,7 +201,7 @@ Recommendations include:
 ✅ Replace static plots with interactive charts (e.g., Plotly)
 
 ---
-## 📸 Preview Images of the App
+## 📸 Preview Images (Screenshots of the App)
 - Homepage :
 
 ![Homepage_1](https://github.com/user-attachments/assets/1acfa540-42ae-4ad6-82b0-e132d719baea)
