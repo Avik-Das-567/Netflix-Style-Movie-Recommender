@@ -115,7 +115,7 @@ Netflix-App/
 - **Watch trailers (`/watch/<movie>` route)**
   - Opens the trailer or watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
 
-- **Admin** button on homepage
+- **Admin** Login button on homepage:
   - Takes you to the login page; if logged in as the admin user, shows all movies sorted by rating.
 
 ---
