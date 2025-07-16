@@ -123,7 +123,7 @@ Netflix-App/
 ## 🎬 **Recommendation Logic**
 
 When a user selects a movie:
-- App retrieves its index from the movies DataFrame.
+- The app retrieves its index from the movies DataFrame.
 - Fetches its row in the similarity matrix.
 - Sorts other movies by descending similarity score.
 - Recommends the top 5 most similar movies.
@@ -230,8 +230,7 @@ Recommendations include:
 
 ## 👤 **Author**
 
-Built by **Avik**.  
-For learning, experimenting, and exploring machine learning with real-world web apps.
+Built by **Avik** — For learning, experimenting, and exploring Machine Learning with real-world web apps.
 
 ---
 
