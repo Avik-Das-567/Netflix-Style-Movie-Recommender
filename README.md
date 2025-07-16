@@ -105,12 +105,18 @@ Netflix-App/
 
 ---
 
-## 📊 **Visualization Module**
+## 📊 **Extra Features & Visualizations**
 
-Inside `/visualize` route:
-- **Pie Chart**: Shows distribution of movies by language.
-- **Bar Chart**: Shows genres with average rating above 8.
-- Generated dynamically with `matplotlib` and embedded into the page.
+- **Visualizations (`/visualize` route)**
+  - **Pie Chart :** Shows distribution of movies by language
+  - **Bar Chart :** Shows genres with average rating above 8
+  - Generated dynamically with **`matplotlib`** and embedded into the page
+
+- **Watch trailers (`/watch/<movie>` route)**
+  - Opens the trailer or watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
+
+- **Admin** button on homepage
+  - Takes you to the login page; if logged in as the admin user, shows all movies sorted by rating.
 
 ---
 
@@ -128,13 +134,6 @@ Recommendations include:
 - Language
 - Rating
 - Poster image (via `image_file` column)
-
----
-
-## 🔑 **Admin & Watch Features**
-
-- `/admin` route: Displays a list of all movies, sorted by rating (access limited to the admin user).
-- `/watch/<movie>` route: Opens the trailer or watch link using pre-collected YouTube URLs stored in `movie_links.csv`.
 
 ---
 
@@ -191,16 +190,6 @@ Recommendations include:
 
 ---
 
-## 🚀 **Possible Future Improvements**
-
-✅ Use password hashing instead of plain text storage  
-✅ Add user-specific favorite lists & history  
-✅ Deploy the app to cloud (e.g., Heroku, Render)  
-✅ Improve search with fuzzy matching  
-✅ Add collaborative filtering for even richer recommendations  
-✅ Replace static plots with interactive charts (e.g., Plotly)
-
----
 ## 📸 Preview Images (Screenshots of the App)
 - Homepage :
 
@@ -228,9 +217,20 @@ Recommendations include:
 
 ---
 
+## 🚀 **Possible Future Improvements**
+
+✅ Use password hashing instead of plain text storage  
+✅ Add user-specific favorite lists & history  
+✅ Deploy the app to cloud (e.g., Heroku, Render)  
+✅ Improve search with fuzzy matching  
+✅ Add collaborative filtering for even richer recommendations  
+✅ Replace static plots with interactive charts (e.g., Plotly)
+
+---
+
 ## 👤 **Author**
 
-Built by **Avik**  
+Built by **Avik**.  
 For learning, experimenting, and exploring machine learning with real-world web apps.
 
 ---
