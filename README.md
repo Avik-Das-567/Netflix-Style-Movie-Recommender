@@ -23,34 +23,34 @@ Inspired by Netflix, this web app offers personalized recommendations, trending 
 This project uses a **content-based filtering** approach to recommend movies. Here’s an overview of the data flow and logic:
 
 ### 1️⃣ Data Collection & Cleaning
-- Raw movie data is stored in `dataset/movies_dataset.csv`.
-- `clean_data.py`:
+- Raw movie data is stored in **`dataset/movies_dataset.csv`**.
+- **`clean_data.py`**:
   - Removes duplicates and incomplete records.
   - Standardizes text fields (lowercase, trims spaces).
   - Ensures all movies have valid ratings and image references.
-- Clean data is saved to `dataset/cleaned_movies.csv`.
+- Clean data is saved to **`dataset/cleaned_movies.csv`**.
 
 ### 2️⃣ Feature Engineering & Model Training
-- `train.py`:
+- **`train.py`**:
   - Merges key metadata fields: tags, genre, actor, and language into a single text field.
   - Uses **CountVectorizer** (from scikit-learn) to create vector embeddings of each movie.
   - Computes **cosine similarity** between all movie vectors.
 - Saves:
-  - `pkl/movies.pkl`: DataFrame of cleaned movies with metadata.
-  - `pkl/similarity.pkl`: Pre-computed similarity matrix.
+  - **`pkl/movies.pkl`**: DataFrame of cleaned movies with metadata.
+  - **`pkl/similarity.pkl`**: Pre-computed similarity matrix.
 
 ### 3️⃣ Web Application (Flask)
-- **app.py**:
+- **`app.py`**:
   - Handles routing, user sessions, and rendering templates.
   - Supports login, signup, logout, recommendations, admin view, and data visualizations.
 - Recommendations are served instantly using the pre-computed similarity matrix.
 
 ### 4️⃣ Database
 - User accounts stored in **SQLite** (`database/users.db`).
-- Created using `netflixdb.py` script with fields:
-  - `id` (primary key)
-  - `email` (unique)
-  - `password` (plain text)
+- Created using **`netflixdb.py`** script with fields:
+  - **`id`** (primary key)
+  - **`email`** (unique)
+  - **`password`** (plain text)
 
 ---
 
@@ -98,10 +98,10 @@ Netflix-App/
 
 | Script                | Purpose                                                                |
 | -------------------- | ----------------------------------------------------------------------- |
-| `clean_data.py`      | Cleans raw data, standardizes text, removes duplicates, handles missing |
-| `train.py`           | Generates vectors & similarity matrix using CountVectorizer & cosine    |
-| `netflixdb.py`       | Creates SQLite database for user login                                  |
-| `app.py`             | Flask app: handles routing, sessions, recommendations, visualizations   |
+| **`clean_data.py`**      | Cleans raw data, standardizes text, removes duplicates, handles missing |
+| **`train.py`**           | Generates vectors & similarity matrix using CountVectorizer & cosine    |
+| **`netflixdb.py`**       | Creates SQLite database for user login                                  |
+| **`app.py`**             | Flask app: handles routing, sessions, recommendations, visualizations   |
 
 ---
 
