@@ -124,7 +124,7 @@ Netflix-App/
   - Opens the trailer or watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
 
 - **Admin** Login button on homepage:
-  - Takes you to the login page. If logged in as the admin user, takes you back to the app's homepage.
+  - Opens the login page. If logged in as admin, simply redirects to the homepage.
 
 ---
 
@@ -227,12 +227,12 @@ Recommendations include:
 
 ## 🚀 **Possible Future Improvements**
 
-✅ Use password hashing instead of plain text storage  
-✅ Add user-specific favorite lists & history  
-✅ Deploy the app to cloud (e.g., Heroku, Render)  
-✅ Improve search with fuzzy matching  
-✅ Add collaborative filtering for even richer recommendations  
-✅ Replace static plots with interactive charts (e.g., Plotly)
+- Use password hashing instead of plain text storage  
+- Add user-specific favorite lists & history  
+- Deploy the app to cloud (e.g., Heroku, Render)  
+- Improve search with fuzzy matching  
+- Add collaborative filtering for even richer recommendations  
+- Replace static plots with interactive charts (e.g., Plotly)
 
 ---
 
