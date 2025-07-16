@@ -1,30 +1,60 @@
-# 🎬 Netflix-Style Movie Recommender Web App
+# 🎥 Netflix-Style Movie Recommender
 
-A fully functional Netflix-inspired movie recommendation system built with **Flask** and **Python**. This project demonstrates how Machine Learning and NLP can power real-world recommendation systems — wrapped in a clean, production-style web app.
-
----
-
-## ✨ Features
-- 🔐 **User Authentication**: Login & logout with personalized greeting
-- 🎥 **Movie Recommendation**: Select a movie, get similar movies recommended instantly
-- 🧠 **Content-Based Filtering**: Recommendations powered by machine learning similarity algorithms
-- 💻 **Clean UI**: Dark-themed, Netflix-inspired, responsive design
-- 🛠 **Easy to Extend**: Add collaborative filtering, user history, or deployment to cloud
-
----
-## 🛠 Tech Stack
-| Layer         | Technology / Details                                                                 |
-|-------------- | ------------------------------------------------------------------------------------ |
-| Frontend      | HTML, CSS – Netflix-inspired UI                                                      |
-| Backend       | Python, Flask – lightweight web server, routing, authentication                      |
-| ML / Recsys   | Content-based filtering (CountVectorizer + cosine similarity) – trained on `movies_dataset.csv` |
-| Data Storage  | SQLite (`users.db`) – stores user login data dynamically                             |
-| Training Data | CSV file (`movies_dataset.csv`) containing movie metadata (title, tags)              |
-| Deployment    | Local Flask server – easily deployable to cloud (e.g., Render, Heroku)                |
+A content-based movie recommender system built with **Flask**, combining machine learning and interactive visualizations.  
+Inspired by Netflix, this web app offers personalized recommendations, trending titles, and direct trailer links — all in a simple, clean interface.
 
 ---
 
-## 📂 Project Structure
+## ✨ **Features at a Glance**
+
+- 🔐 **User authentication**: Sign up, log in, and manage sessions.
+- 🎯 **Personalized recommendations**: Suggests similar movies based on content (genre, tags, actors, language).
+- 📈 **Trending movies**: Highlights top-rated movies (rating > 9).
+- 📊 **Visualizations**: Interactive charts showing:
+  - Language distribution across movies.
+  - Genres with an average rating above 8.
+- 🎬 **Watch trailers**: One-click trailer links from YouTube.
+- 🛠 **Admin dashboard**: View all movies sorted by rating.
+
+---
+
+## 🧠 **How It Works**
+
+This project uses a **content-based filtering** approach to recommend movies. Here’s an overview of the data flow and logic:
+
+### 1️⃣ Data Collection & Cleaning
+- Raw movie data is stored in `dataset/movies_dataset.csv`.
+- `clean_data.py`:
+  - Removes duplicates and incomplete records.
+  - Standardizes text fields (lowercase, trims spaces).
+  - Ensures all movies have valid ratings and image references.
+- Clean data is saved to `dataset/cleaned_movies.csv`.
+
+### 2️⃣ Feature Engineering & Model Training
+- `train.py`:
+  - Merges key metadata fields: tags, genre, actor, and language into a single text field.
+  - Uses **CountVectorizer** (from scikit-learn) to create vector embeddings of each movie.
+  - Computes **cosine similarity** between all movie vectors.
+- Saves:
+  - `pkl/movies.pkl`: DataFrame of cleaned movies with metadata.
+  - `pkl/similarity.pkl`: Pre-computed similarity matrix.
+
+### 3️⃣ Web Application (Flask)
+- **app.py**:
+  - Handles routing, user sessions, and rendering templates.
+  - Supports login, signup, logout, recommendations, admin view, and data visualizations.
+- Recommendations are served instantly using the pre-computed similarity matrix.
+
+### 4️⃣ Database
+- User accounts stored in **SQLite** (`database/users.db`).
+- Created using `netflixdb.py` script with fields:
+  - `id` (primary key)
+  - `email` (unique)
+  - `password` (plain text)
+
+---
+
+## 🏛 **Project Structure**
 
 ```
 Netflix-App/
@@ -63,26 +93,60 @@ Netflix-App/
 └── app.py
 ```
 ---
-## 📊 How it Works
-- The app uses a **content-based recommendation algorithm** :
-  - Extracts movie features from text tags (e.g., genre, keywords, themes)
-  - Converts these tags into numerical vectors using **CountVectorizer**
-  - Computes **cosine similarity** between movies
-  - Recommends the top N movies most similar to the user's selected movie
 
-- Built to demonstrate :
-  - **Feature engineering & vectorization** – transforming text metadata into embeddings
-  - **Similarity search & ranking** – finding closest matches based on cosine similarity
-  - **Integration of ML into production** – connecting model outputs into a real Flask web app
+## ⚙️ **Main Modules & Scripts**
+
+| Script                | Purpose                                                                |
+| -------------------- | ----------------------------------------------------------------------- |
+| `clean_data.py`      | Cleans raw data, standardizes text, removes duplicates, handles missing |
+| `train.py`           | Generates vectors & similarity matrix using CountVectorizer & cosine    |
+| `netflixdb.py`       | Creates SQLite database for user login                                  |
+| `app.py`             | Flask app: handles routing, sessions, recommendations, visualizations   |
 
 ---
-## ✅ Requirements
-- Python
-- Flask
-- pandas
-- scikit-learn
-- matplotlib
-- (Optional) SQLiteStudio – to view `users.db` visually
+
+## 📊 **Visualization Module**
+
+Inside `/visualize` route:
+- **Pie Chart**: Shows distribution of movies by language.
+- **Bar Chart**: Shows genres with average rating above 8.
+- Generated dynamically with `matplotlib` and embedded into the page.
+
+---
+
+## 🎬 **Recommendation Logic**
+
+When a user selects a movie:
+- App retrieves its index from the movies DataFrame.
+- Fetches its row in the similarity matrix.
+- Sorts other movies by descending similarity score.
+- Recommends the top 5 most similar movies.
+
+Recommendations include:
+- Title
+- Genre
+- Language
+- Rating
+- Poster image (via `image_file` column)
+
+---
+
+## 🔑 **Admin & Watch Features**
+
+- `/admin` route: Displays a list of all movies, sorted by rating (access limited to the admin user).
+- `/watch/<movie>` route: Opens the trailer or watch link using pre-collected YouTube URLs stored in `movie_links.csv`.
+
+---
+
+## 🧪 **Technologies & Libraries Used**
+
+- **Python** & **Flask**: Web framework & backend
+- **SQLite**: Lightweight relational database
+- **Pandas**: Data cleaning & processing
+- **scikit-learn**: NLP vectorization & similarity calculation
+- **Matplotlib**: Data visualization
+- **HTML / Jinja2**: Templates
+- **pickle**: Saving and loading trained models
 
 ---
 ## 🚀 How to Run Locally
@@ -123,18 +187,30 @@ Netflix-App/
   ```
   http://127.0.0.1:5000
   ```
+
 ---
-## 📸 Preview Images of the App
-- Homepage :
 
-![Netflix_App_Screenshot](https://github.com/user-attachments/assets/90ce9fcc-50d4-4f55-8f81-b6e0541f2d67)
+## 🚀 **Possible Future Improvements**
 
-- Login Page :
+✅ Use password hashing instead of plain text storage  
+✅ Add user-specific favorite lists & history  
+✅ Deploy the app to cloud (e.g., Heroku, Render)  
+✅ Improve search with fuzzy matching  
+✅ Add collaborative filtering for even richer recommendations  
+✅ Replace static plots with interactive charts (e.g., Plotly)
 
-![Netflix_Login_Screenshot](https://github.com/user-attachments/assets/e12db505-b721-430d-9e92-45f5251cd6ec)
+---
 
-- Sign-Up Page :
+## 👤 **Author**
 
-![Signup Page](https://github.com/user-attachments/assets/27e8d941-f844-4356-803f-404acc495d50)
+Built by **Avik**  
+For learning, experimenting, and exploring machine learning with real-world web apps.
+
+---
+
+## 📄 **License**
+
+This project is for educational use.  
+Feel free to modify and build upon it!
 
 ---
