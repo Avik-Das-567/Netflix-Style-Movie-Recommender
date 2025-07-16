@@ -166,7 +166,7 @@ Recommendations include:
   ```
   python scripts/netflixdb.py
   ```
-  This creates **`users.db`** to store users' **email IDs** and **passwords**.
+  This creates **`users.db`**, to store **usernames** and **passwords**.
 
 - Clean the data :
   ```
@@ -178,7 +178,7 @@ Recommendations include:
   ```
   python scripts/train.py
   ```
-  - This generates **`movies.pkl`** & **`similarity.pkl`**.
+  This generates **`movies.pkl`** & **`similarity.pkl`**.
 
 - Run the app :
   ```
