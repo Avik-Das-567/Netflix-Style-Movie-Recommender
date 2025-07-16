@@ -201,6 +201,32 @@ Recommendations include:
 ✅ Replace static plots with interactive charts (e.g., Plotly)
 
 ---
+## 📸 Preview Images of the App
+- Homepage :
+
+![Homepage_1](https://github.com/user-attachments/assets/1acfa540-42ae-4ad6-82b0-e132d719baea)
+
+- Recommendations page :
+
+![Homepage_2](https://github.com/user-attachments/assets/1b9d4341-2113-4175-8117-974d13d0c172)
+
+- Visualizations page :
+
+![Visualization_Page](https://github.com/user-attachments/assets/0a753422-111b-4efe-971c-e0f7243824b4)
+
+- Sign-up Page :
+
+![Signup_Page](https://github.com/user-attachments/assets/a7af236f-7f29-4155-9ce4-52854106bbfb)
+
+- Login Page :
+
+![Login_Page](https://github.com/user-attachments/assets/846d0d33-70bb-404e-8e16-f55f6cab03cd)
+
+- Watch page :
+
+![Watch_on_youtube](https://github.com/user-attachments/assets/740462d8-2fcb-4f17-a406-2edb7e8c5d18)
+
+---
 
 ## 👤 **Author**
 
