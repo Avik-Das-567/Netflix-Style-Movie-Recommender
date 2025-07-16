@@ -145,45 +145,46 @@ Recommendations include:
 - **Pandas**: Data cleaning & processing
 - **scikit-learn**: NLP vectorization & similarity calculation
 - **Matplotlib**: Data visualization
-- **HTML / Jinja2**: Templates
+- **HTML**: Templates
 - **pickle**: Saving and loading trained models
 
 ---
 ## 🚀 How to Run Locally
-- Go to the **Netflix-App Folder** in your PC, and open **Command Prompt** in that folder.
-
-- In the CMD, type :
+- Navigate to your local **Netflix-App** folder, and open **Command Prompt** in that folder. Create a **virtual environment** :
   ```
   python -m venv venv  
   ```
-  This creates a **virtual environment** named `venv`.
-
-- Activate the **Virtual Environment** :
+- Activate the **virtual environment** :
   ```
   venv\Scripts\activate
   ```
-- Install the dependencies : **flask**, **pandas**, **scikit-learn**, **matplotlib**.
+- Install required dependencies : **flask**, **pandas**, **scikit-learn**, **matplotlib**.
   ```
   pip install flask pandas scikit-learn matplotlib
   ```
-- Create the database :
+- Prepare the database :
   ```
-  python netflixdb.py
+  python scripts/netflixdb.py
   ```
-  - This will create **`users.db`** to store the users' **email IDs** and **passwords**.
-  - You can open and inspect **`users.db`** using tools like **SQLiteStudio**.
+  This creates **`users.db`** to store users' **email IDs** and **passwords**.
 
-- Train the Model :
+- Clean the data :
   ```
-  python train.py
+  python scripts/clean_data.py
   ```
-  - **`movies.pkl`** & **`similarity.pkl`** will be created.
+  This generates the **`cleaned_movies.csv`** dataset.
+
+- Train the Recommendation Model :
+  ```
+  python scripts/train.py
+  ```
+  - This generates **`movies.pkl`** & **`similarity.pkl`**.
 
 - Run the app :
   ```
   python app.py
   ```
-- Open in your browser :
+- Open your browser and go to :
   ```
   http://127.0.0.1:5000
   ```
