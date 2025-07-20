@@ -111,7 +111,7 @@ Netflix-App/
 
 | Script                | Purpose                                                                |
 | -------------------- | ----------------------------------------------------------------------- |
-| **`clean_data.py`**      | Cleans raw data, standardizes text, removes duplicates, handles missing |
+| **`clean_data.py`**      | Cleans raw data, standardizes text, removes duplicates, handles missing values |
 | **`train.py`**           | Generates vectors & similarity matrix using CountVectorizer & cosine    |
 | **`netflixdb.py`**       | Creates SQLite database for user login                                  |
 | **`app.py`**             | Flask app: handles routing, sessions, recommendations, visualizations   |
