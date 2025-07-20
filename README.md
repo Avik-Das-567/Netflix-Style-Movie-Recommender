@@ -10,7 +10,7 @@ Inspired by Netflix, this web app offers personalized recommendations, trending 
 - 🔐 **User Authentication**: Sign up, log in, manage sessions securely.
 - 🎯 **Personalized Recommendations**: Suggests similar movies using NLP-based content filtering.
 - 📈 **Trending Section**: Highlights top-rated movies (rating > 9).
-- 📊 **Visualizations**: Language distribution & genre-wise average ratings (via matplotlib).
+- 📊 **Visualizations**: Language distribution & genre-wise average rating charts.
 - 🎬 **Watch Trailers**: One-click trailer links from YouTube.
 - 🛒 **Subscription Plans**: Simulated subscription page with confirmation screen.
 
@@ -162,7 +162,7 @@ Recommendations include:
 - **scikit-learn**: NLP vectorization & similarity calculation
 - **Matplotlib**: Data visualization
 - **HTML**: Templates
-- **pickle**: Saving and loading trained models
+- **pickle**: Used to save and load preprocessed data (movie metadata & similarity matrix)
 
 ---
 ## 🚀 How to Run Locally
