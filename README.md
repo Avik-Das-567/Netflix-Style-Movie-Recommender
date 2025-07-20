@@ -245,12 +245,19 @@ Recommendations include:
 
 ## 🚀 **Possible Future Improvements**
 
-- Use password hashing instead of plain text storage  
-- Add user-specific favorite lists & history  
-- Deploy the app to cloud (e.g., Heroku, Render)  
-- Improve search with fuzzy matching  
-- Add collaborative filtering for even richer recommendations  
-- Replace static plots with interactive charts (e.g., Plotly)
+- Replace plain-text password storage with secure hashing
+
+- Allow users to rate movies and track favorites or watchlists
+
+- Add search auto-suggestions with fuzzy matching for better UX
+
+- Integrate interactive visualizations using Plotly or Chart.js
+
+- Enable basic subscription logic (e.g., restrict features based on plan)
+
+- Improve UI with animations and responsive layouts
+
+- Add movie filtering by genre, language, or rating
 
 ---
 
