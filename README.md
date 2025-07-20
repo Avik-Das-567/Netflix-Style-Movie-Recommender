@@ -7,13 +7,12 @@ Inspired by Netflix, this web app offers personalized recommendations, trending 
 
 ## ✨ Features at a Glance
 
-- 🔐 **User authentication**: Sign up, log in, and manage sessions.
-- 🎯 **Personalized recommendations**: Suggests similar movies based on content (genre, tags, actors, language).
-- 📈 **Trending movies**: Highlights top-rated movies (rating > 9).
-- 📊 **Visualizations**: Interactive charts showing:
-  - Language distribution across movies.
-  - Genres with an average rating above 8.
-- 🎬 **Watch trailers**: One-click trailer links from YouTube.
+- 🔐 **User Authentication**: Sign up, log in, manage sessions securely.
+- 🎯 **Personalized Recommendations**: Suggests similar movies using NLP-based content filtering.
+- 📈 **Trending Section**: Highlights top-rated movies (rating > 9).
+- 📊 **Visualizations**: Language distribution & genre-wise average ratings (via matplotlib).
+- 🎬 **Watch Trailers**: One-click trailer links from YouTube.
+- 🛒 **Subscription Plans**: Simulated subscription page with confirmation screen.
 
 ---
 
@@ -124,12 +123,16 @@ Netflix-App/
 - **Visualizations (`/visualize` route)**
   - **Pie Chart :** Shows distribution of movies by language
   - **Bar Chart :** Shows genres with average rating above 8
-  - Generated dynamically with **`matplotlib`** and embedded into the page
+  - Generated dynamically with **`matplotlib`** and embedded into the webpage
 
 - **Watch trailers (`/watch/<movie>` route)**
-  - Opens the trailer or watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
+  - Opens the trailer/watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
 
-- **Admin** Login button on homepage:
+- **Subscription & Payment**
+  - `/subscriptions` displays sample subscription plans.
+  - `/payment_success` confirms selected plan after form submission.
+
+- **Admin View (`/admin`)**
   - Opens the login page. If logged in as admin, simply redirects to the homepage.
 
 ---
