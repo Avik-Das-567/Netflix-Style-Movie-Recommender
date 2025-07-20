@@ -236,7 +236,7 @@ Recommendations include:
 
 ![Subscriptions_Page](https://github.com/user-attachments/assets/0bd906f7-6311-4619-b8b9-fbe18f1ea88c)
 
-- "Payment Success" Page
+- "Payment Success" Page :
 
 ![Payment_Page](https://github.com/user-attachments/assets/f97b02f0-b28f-42ce-9bdc-825e964f4be9)
 
