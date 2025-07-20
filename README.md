@@ -210,27 +210,36 @@ Recommendations include:
 ## 📸 Preview Images (Screenshots of the App)
 - Homepage :
 
-![Homepage_1](https://github.com/user-attachments/assets/1acfa540-42ae-4ad6-82b0-e132d719baea)
+![Homepage_1](https://github.com/user-attachments/assets/d3ce49a2-3c90-4a54-a87d-61cb2c2f1417)
 
-- Recommendations page :
+- Recommendations Page :
 
-![Homepage_2](https://github.com/user-attachments/assets/1b9d4341-2113-4175-8117-974d13d0c172)
+![Homepage_2](https://github.com/user-attachments/assets/74227a48-5393-48a4-b1a1-a5116ff4abcf)
 
-- Visualizations page :
+- Visualizations Page :
 
-![Visualization_Page](https://github.com/user-attachments/assets/0a753422-111b-4efe-971c-e0f7243824b4)
+![Visualization_Page](https://github.com/user-attachments/assets/fb7dfa00-d2cc-4c12-b227-3052693eb67b)
 
 - Sign-up Page :
 
-![Signup_Page](https://github.com/user-attachments/assets/a7af236f-7f29-4155-9ce4-52854106bbfb)
+![Signup_Page](https://github.com/user-attachments/assets/8be5b7c4-3123-45bb-b869-f7f1ae68e78b)
 
-- Login Page :
+- Sign-in Page :
 
-![Login_Page](https://github.com/user-attachments/assets/846d0d33-70bb-404e-8e16-f55f6cab03cd)
+![Login_Page](https://github.com/user-attachments/assets/bfb927d5-f840-481f-9066-255cc2957b67)
 
-- Watch page :
+- "Watch Now" Page :
 
-![Watch_on_youtube](https://github.com/user-attachments/assets/740462d8-2fcb-4f17-a406-2edb7e8c5d18)
+![Watch_on_youtube](https://github.com/user-attachments/assets/e14321bf-9c5e-49ab-b6e1-2a2597ba0b32)
+
+- Subscriptions Page :
+
+![Subscriptions_Page](https://github.com/user-attachments/assets/0bd906f7-6311-4619-b8b9-fbe18f1ea88c)
+
+- "Payment Success" Page
+
+![Payment_Page](https://github.com/user-attachments/assets/f97b02f0-b28f-42ce-9bdc-825e964f4be9)
+
 
 ---
 
