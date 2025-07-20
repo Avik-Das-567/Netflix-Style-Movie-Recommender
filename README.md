@@ -129,8 +129,8 @@ Netflix-App/
   - Opens the trailer/watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
 
 - **Subscription & Payment**
-  - `/subscriptions` displays sample subscription plans.
-  - `/payment_success` confirms selected plan after form submission.
+  - **`/subscriptions` :** Displays sample subscription plans.
+  - **`/payment_success` :** Confirms selected plan after form submission.
 
 - **Admin View (`/admin`)**
   - Opens the login page. If logged in as **admin**, redirects to the homepage like a regular user.
