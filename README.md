@@ -122,7 +122,7 @@ Netflix-App/
 
 - **Visualizations (`/visualize` route)**
   - **Pie Chart :** Shows distribution of movies by language
-  - **Bar Chart :** Shows genres with average rating above 8
+  - **Bar Chart :** Displays genres where the average rating exceeds 8
   - Generated dynamically with **`matplotlib`** and embedded into the webpage
 
 - **Watch trailers (`/watch/<movie>` route)**
@@ -133,7 +133,7 @@ Netflix-App/
   - `/payment_success` confirms selected plan after form submission.
 
 - **Admin View (`/admin`)**
-  - Opens the login page. If logged in as admin, simply redirects to the homepage.
+  - Opens the login page. If logged in as **admin**, redirects to the homepage like a regular user.
 
 ---
 
