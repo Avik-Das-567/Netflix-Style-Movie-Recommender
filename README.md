@@ -73,16 +73,22 @@ Netflix-App/
 │   └── train.py
 │
 ├── static/
-│   ├── style.css
-│   ├── watch.css
-│   ├── bg.jpg
-│   └── images
+│   ├── css/
+│   │   ├── login.css
+│   │   ├── signup.css
+│   │   ├── style.css
+│   │   ├── subscription.css
+│   │   └── watch.css
+│   │
+│   └── img/
 │
 ├── templates/
 │   ├── admin.html
 │   ├── home.html
 │   ├── login.html
+│   ├── payment_success.html
 │   ├── signup.html
+│   ├── subscription.html
 │   ├── visualize.html
 │   └── watch.html
 │
