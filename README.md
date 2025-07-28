@@ -141,7 +141,7 @@ Netflix-App/
 
 When a user selects a movie:
 - The app retrieves its index from the movies DataFrame.
-- Fetches its row in the similarity matrix.
+- Then extracts its similarity scores from the matrix.
 - Sorts other movies by descending similarity score.
 - Recommends the top 5 most similar movies.
 
