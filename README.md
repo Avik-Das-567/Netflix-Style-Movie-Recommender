@@ -123,7 +123,7 @@ Netflix-App/
 - **Visualizations (`/visualize` route)**
   - **Pie Chart :** Shows distribution of movies by language
   - **Bar Chart :** Displays genres where the average rating exceeds 8
-  - Generated dynamically with **`matplotlib`** and embedded into the webpage
+  - Dynamically generated using **`matplotlib`** and embedded directly in the web interface
 
 - **Watch trailers (`/watch/<movie>` route)**
   - Opens the trailer/watch link using pre-collected YouTube URLs stored in **`movie_links.csv`**
