@@ -118,7 +118,7 @@ Netflix-App/
 
 ---
 
-## 📊 **Extra Features & Visualizations**
+## 📊 **Key Functionalities & Visualizations**
 
 - **Visualizations (`/visualize` route)**
   - **Pie Chart :** Shows distribution of movies by language
