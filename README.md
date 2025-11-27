@@ -243,27 +243,9 @@ Recommendations include:
 
 ---
 
-## 🚀 **Possible Future Improvements**
-
-- Replace plain-text password storage with secure hashing
-
-- Allow users to rate movies and track favorites or watchlists
-
-- Add search auto-suggestions with fuzzy matching for better UX
-
-- Integrate interactive visualizations using Plotly or Chart.js
-
-- Enable basic subscription logic (e.g., restrict features based on plan)
-
-- Improve UI with animations and responsive layouts
-
-- Add movie filtering by genre, language, or rating
-
----
-
 ## 👤 **Author**
 
-Built by **Avik** — For learning, experimenting, and exploring Machine Learning with real-world web apps.
+Built by [Avik](https://github.com/Avik-Das-567) - For learning, experimenting, and exploring Machine Learning with real-world web apps.
 
 ---
 
